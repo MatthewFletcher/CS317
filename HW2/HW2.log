@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  7 FEB 2019 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  6 MAR 2019 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**HW1.tex
-(./HW1.tex
+**HW2.tex
+(./HW2.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -174,8 +174,8 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
- (./HW1.aux)
-\openout1 = `HW1.aux'.
+ (./HW2.aux)
+\openout1 = `HW2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -290,97 +290,128 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count117
-<P2Flowchart.png, id=1, 591.20876pt x 335.2525pt>
-File: P2Flowchart.png Graphic file (type png)
-<use P2Flowchart.png>
-Package pdftex.def Info: P2Flowchart.png  used on input line 60.
-(pdftex.def)             Requested size: 461.14098pt x 261.4959pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+<./P1/sorted.png, id=1, 510.90875pt x 440.64626pt>
+File: ./P1/sorted.png Graphic file (type png)
+<use ./P1/sorted.png>
+Package pdftex.def Info: ./P1/sorted.png  used on input line 61.
+(pdftex.def)             Requested size: 255.45375pt x 220.32259pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 67.
+LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 74.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./P1/sorted.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 166.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
- [1
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 166.
+ [2]
+<./P11/1.png, id=14, 157.58875pt x 185.69376pt>
+File: ./P11/1.png Graphic file (type png)
+<use ./P11/1.png>
+Package pdftex.def Info: ./P11/1.png  used on input line 303.
+(pdftex.def)             Requested size: 78.79417pt x 92.84665pt.
+<./P11/2.png, id=15, 152.57pt x 179.67125pt>
+File: ./P11/2.png Graphic file (type png)
+<use ./P11/2.png>
+Package pdftex.def Info: ./P11/2.png  used on input line 304.
+(pdftex.def)             Requested size: 76.2848pt x 89.83539pt.
+<./P11/3.png, id=16, 151.56625pt x 177.66376pt>
+File: ./P11/3.png Graphic file (type png)
+<use ./P11/3.png>
+Package pdftex.def Info: ./P11/3.png  used on input line 305.
+(pdftex.def)             Requested size: 75.78293pt x 88.83165pt.
+<./P11/4.png, id=17, 154.5775pt x 181.67876pt>
+File: ./P11/4.png Graphic file (type png)
+<use ./P11/4.png>
+Package pdftex.def Info: ./P11/4.png  used on input line 306.
+(pdftex.def)             Requested size: 77.28854pt x 90.83914pt.
+<./P11/5.png, id=18, 152.57pt x 181.67876pt>
+File: ./P11/5.png Graphic file (type png)
+<use ./P11/5.png>
+Package pdftex.def Info: ./P11/5.png  used on input line 307.
+(pdftex.def)             Requested size: 76.2848pt x 90.83914pt.
+<./P11/6.png, id=19, 152.57pt x 177.66376pt>
+File: ./P11/6.png Graphic file (type png)
+<use ./P11/6.png>
+Package pdftex.def Info: ./P11/6.png  used on input line 308.
+(pdftex.def)             Requested size: 76.2848pt x 88.83165pt.
+<./P11/7.png, id=20, 153.57375pt x 176.66pt>
+File: ./P11/7.png Graphic file (type png)
+<use ./P11/7.png>
+Package pdftex.def Info: ./P11/7.png  used on input line 309.
+(pdftex.def)             Requested size: 76.78668pt x 88.32977pt.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./P2Flowchart.png>] [2] [3
-]
-<P15-1.png, id=23, 1371.1225pt x 770.88pt>
-File: P15-1.png Graphic file (type png)
-<use P15-1.png>
-Package pdftex.def Info: P15-1.png  used on input line 340.
-(pdftex.def)             Requested size: 548.43929pt x 308.34654pt.
-
-Overfull \hbox (6.41428pt too wide) in paragraph at lines 340--341
-[][] 
+Overfull \hbox (23.81502pt too wide) in paragraph at lines 303--310
+[][] [] [] [] [] [] [] 
  []
 
-<P15-2.png, id=24, 1371.1225pt x 770.88pt>
-File: P15-2.png Graphic file (type png)
-<use P15-2.png>
-Package pdftex.def Info: P15-2.png  used on input line 348.
-(pdftex.def)             Requested size: 548.43929pt x 308.34654pt.
-
-Overfull \hbox (6.41428pt too wide) in paragraph at lines 348--349
-[][] 
- []
-
-[4 <./P15-1.png>]
-<P15-3.png, id=29, 656.4525pt x 468.75125pt>
-File: P15-3.png Graphic file (type png)
-<use P15-3.png>
-Package pdftex.def Info: P15-3.png  used on input line 356.
-(pdftex.def)             Requested size: 459.51361pt x 328.12363pt.
-<P15-full.png, id=30, 1371.1225pt x 770.88pt>
-File: P15-full.png Graphic file (type png)
-<use P15-full.png>
-Package pdftex.def Info: P15-full.png  used on input line 364.
-(pdftex.def)             Requested size: 548.43929pt x 308.34654pt.
-
-Overfull \hbox (6.41428pt too wide) in paragraph at lines 364--365
-[][] 
- []
-
-[5 <./P15-2.png> <./P15-3.png>] [6 <./P15-full.png>] (./HW1.aux) ) 
+[3]
+<./P13/kruskals/1.png, id=25, 235.88126pt x 172.645pt>
+File: ./P13/kruskals/1.png Graphic file (type png)
+<use ./P13/kruskals/1.png>
+Package pdftex.def Info: ./P13/kruskals/1.png  used on input line 340.
+(pdftex.def)             Requested size: 117.94034pt x 86.32228pt.
+<./P13/kruskals/2.png, id=26, 212.795pt x 146.5475pt>
+File: ./P13/kruskals/2.png Graphic file (type png)
+<use ./P13/kruskals/2.png>
+Package pdftex.def Info: ./P13/kruskals/2.png  used on input line 344.
+(pdftex.def)             Requested size: 106.39723pt x 73.27356pt.
+<./P13/kruskals/3.png, id=27, 217.81375pt x 150.5625pt>
+File: ./P13/kruskals/3.png Graphic file (type png)
+<use ./P13/kruskals/3.png>
+Package pdftex.def Info: ./P13/kruskals/3.png  used on input line 348.
+(pdftex.def)             Requested size: 108.9066pt x 75.28105pt.
+<./P13/kruskals/4.png, id=28, 232.87pt x 158.5925pt>
+File: ./P13/kruskals/4.png Graphic file (type png)
+<use ./P13/kruskals/4.png>
+Package pdftex.def Info: ./P13/kruskals/4.png  used on input line 352.
+(pdftex.def)             Requested size: 116.43471pt x 79.29604pt.
+<./P13/kruskals/5.png, id=29, 206.7725pt x 145.54375pt>
+File: ./P13/kruskals/5.png Graphic file (type png)
+<use ./P13/kruskals/5.png>
+Package pdftex.def Info: ./P13/kruskals/5.png  used on input line 356.
+(pdftex.def)             Requested size: 103.38599pt x 72.77168pt.
+ [4 <./P11/1.png> <./P11/2.png> <./P11/3.png> <./P11/4.png> <./P11/5.png> <./P1
+1/6.png> <./P11/7.png> <./P13/kruskals/1.png> <./P13/kruskals/2.png> <./P13/kru
+skals/3.png> <./P13/kruskals/4.png> <./P13/kruskals/5.png>] [5] (./HW2.aux) ) 
 Here is how much of TeX's memory you used:
- 4093 strings out of 494923
- 56507 string characters out of 6180741
- 134695 words of memory out of 5000000
- 7354 multiletter control sequences out of 15000+600000
+ 4127 strings out of 494923
+ 57191 string characters out of 6180741
+ 151695 words of memory out of 5000000
+ 7382 multiletter control sequences out of 15000+600000
  5647 words of font info for 23 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,7n,32p,309b,1389s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy7.pfb>
-Output written on HW1.pdf (6 pages, 1078093 bytes).
+ 41i,8n,32p,270b,1386s stack positions out of 5000i,500n,10000p,200000b,80000s
+</
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on HW2.pdf (5 pages, 184941 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
