@@ -362,18 +362,35 @@ TODO EXPLAIN PRIMS ALGORITHM
 
 Prims algorithm starts from some vertex (Vertex A in this example) and finds the smallest addition that can be added to the current tree in order to not create a cycle. 
 
+A dashed line indicated that edge has been selected. 
+
+Start at vertex A. There are 4 edges that can be selected: AE, AD, AC, and AB. AE has the lowest weight, so we select that edge. 
+
 \includegraphics[scale=0.5]{./P13/prims/0}
+
+Now, we check all of the edges coming out of both vertex A and E. The lowest weight gets selected, and we choose edge ED. 
 
 \includegraphics[scale=0.5]{./P13/prims/1}
 
+At this point, we check vertices A, E, and D. Although DA has the lowest weight, it would cause a cycle. So, we skip it and check the other edges. 
+
 \includegraphics[scale=0.5]{./P13/prims/2}
+
+Continuing...
 
 \includegraphics[scale=0.5]{./P13/prims/3}
 
+Almost there...
+
 \includegraphics[scale=0.5]{./P13/prims/4}
+
+
+And done!
 
 \includegraphics[scale=0.5]{./P13/prims/5}
 
+
+We are done because all vertices have been reached, and no loops or cycles have been created. The total weight is $4+2+1+5+7=\boxed{19}$.
 
 
 
