@@ -358,39 +358,40 @@ Add the next edge.
 At this point, all the nodes are connected and adding any more lines would result in a cycle being created. Hence, we are done. 
 
 
-TODO EXPLAIN PRIMS ALGORITHM
 
 Prims algorithm starts from some vertex (Vertex A in this example) and finds the smallest addition that can be added to the current tree in order to not create a cycle. 
 
 A dashed line indicated that edge has been selected. 
 
-Start at vertex A. There are 4 edges that can be selected: AE, AD, AC, and AB. AE has the lowest weight, so we select that edge. 
-
 \includegraphics[scale=0.5]{./P13/prims/0}
 
-Now, we check all of the edges coming out of both vertex A and E. The lowest weight gets selected, and we choose edge ED. 
+Start at vertex A. There are 4 edges that can be selected: AE, AD, AC, and AB. AE has the lowest weight, so we select that edge. 
 
 \includegraphics[scale=0.5]{./P13/prims/1}
 
-At this point, we check vertices A, E, and D. Although DA has the lowest weight, it would cause a cycle. So, we skip it and check the other edges. 
+Now, we check all of the edges coming out of both vertex A and E. The lowest weight gets selected, and we choose edge ED. 
 
 \includegraphics[scale=0.5]{./P13/prims/2}
 
-Continuing...
+At this point, we check vertices A, E, and D. Although DA has the lowest weight, it would cause a cycle. So, we skip it and check the other edges. 
 
 \includegraphics[scale=0.5]{./P13/prims/3}
 
-Almost there...
+Continuing...
 
 \includegraphics[scale=0.5]{./P13/prims/4}
 
+Almost there...
 
-And done!
 
 \includegraphics[scale=0.5]{./P13/prims/5}
 
+And done!
 
-We are done because all vertices have been reached, and no loops or cycles have been created. The total weight is $4+2+1+5+7=\boxed{19}$.
+
+
+
+We are done because all vertices have been reached, and no loops or cycles have been created. The total weight is $3+2+1+5+7=\boxed{18}$.
 
 
 
@@ -401,14 +402,326 @@ We are done because all vertices have been reached, and no loops or cycles have 
 
 14. 
 
+Start at vertex A. Find the shortest path to all other vertices, and indicate in table. Use $\infty$ if there is no path. 
+
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+V & \textbf{A} & B & C & D & E & F & G \\ \hline
+A & $0_A$ & $7_A$ & $3_A$ & $4_DA$ & $\infty$ & $\infty$ & $\infty$ \\ \hline
+\end{tabular}
+\end{table}
+
+C is the next unvisited vertex to visit having the smallest tentative distance. Therefore, we visit C and check if there exists a shorter path between A and immediate neighbors of C through C. 
+
+
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+V & \textbf{A} & B & \textbf{C} & D & E & F & G \\ \hline
+A & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $\infty$ & $\infty_A$ & $\infty_A$ \\ \hline
+C & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $\infty_A$ & $\infty_A$ \\ \hline
+\end{tabular}
+\end{table}
+
+Now, check B and see if any paths can be optimized or created. A route to F is possible through B, so we change the value from $\infty$ to $10_B$. 
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+V & \textbf{A} & \textbf{B} & \textbf{C} & D & E & F & G \\ \hline
+A & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $\infty$ & $\infty_A$ & $\infty_A$ \\ \hline
+C & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $\infty$ & $\infty_A$ \\ \hline
+B & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $10_B$ & $\infty_A$ \\ \hline
+\end{tabular}
+\end{table}
+
+D is the next unvisited node. A route through from A to E through D is now shorter than the current route of A to E through D, therefore, we replace the value. 
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+V & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & E & F & G \\ \hline
+A & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $\infty$ & $\infty_A$ & $\infty_A$ \\ \hline
+C & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $\infty$ & $\infty_A$ \\ \hline
+B & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $10_B$ & $\infty_A$ \\ \hline
+D & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $6_D$ & $10_B$ & $14_D$ \\ \hline
+\end{tabular}
+\end{table}
+
+Next, we visit E. No routes are optimized or created during this visit. 
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+V & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} & F & G \\ \hline
+A & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $\infty$ & $\infty_A$ & $\infty_A$ \\ \hline
+C & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $\infty$ & $\infty_A$ \\ \hline
+B & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $10_B$ & $\infty_A$ \\ \hline
+D & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $6_D$ & $10_B$ & $14_D$ \\ \hline
+E & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $6_D$ & $10_B$ & $14_D$ \\ \hline
+\end{tabular}
+\end{table}
+
+Visit F, no routes optimized. Visit G, no routes optimized. Therefore, the table is finished as follows:
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+V & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} & \textbf{F} & \textbf{G} \\ \hline
+A & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $\infty$ & $\infty_A$ & $\infty_A$ \\ \hline
+C & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $\infty$ & $\infty_A$ \\ \hline
+B & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $12_C$ & $10_B$ & $\infty_A$ \\ \hline
+D & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $6_D$ & $10_B$ & $14_D$ \\ \hline
+E & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $6_D$ & $10_B$ & $14_D$ \\ \hline
+F & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $6_D$ & $10_B$ & $14_D$ \\ \hline
+G & $0_A$ & $7_A$ & $3_A$ & $4_D$ & $6_D$ & $10_B$ & $14_D$ \\ \hline
+\end{tabular}
+\end{table}
+
+
+\includegraphics[scale=0.5]{./P14/final}
+
+
+
+
+
+
 \noindent\rule{8cm}{0.4pt}
 
 
 15.  
 
+Create a table of the numbers and their count:
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|}
+\hline
+T & N & S & E \\ \hline
+1 & 2 & 2 & 4 \\ \hline
+\end{tabular}
+\end{table}
+
+Insert these into a priority queue: 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P15/0}
+\centering
+\end{figure}
+
+Dequeue the first 2 elements T and N, combine into binary tree:
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P15/TN}
+\centering
+\end{figure}
+
+Queue the newly created element into the queue in its proper position. . 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P15/TN_Queue}
+\centering
+\end{figure}
+
+
+Dequeue the next 2 elements, place into binary tree, and queue the newly created element. 
+
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P15/STN}
+\centering
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P15/STN_Queue}
+\centering
+\end{figure}
+
+
+Now, dequeue the 2 elements left in the queue, and insert these into a binary tree. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P15/ESTN}
+\centering
+\end{figure}
+
+Now, we assign a value to each node. To the left is 0, to the right is 1. 
+
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P15/Scored}
+\centering
+\end{figure}
+
+According to this, E gets replaced with a 0, S with a 10, T with a 110, and N with a 111. 
+
+Therefore, TENNESSEE gets converted to 110 0 111 111 0 10 10 0 0. 
+
+This is 17 bits, compared to the original 9 8 bit ASCII characters equaling 72 bits. 
+
+
+
 \noindent\rule{8cm}{0.4pt}
 
 16. 
+
+Begin by creating a heap. 
+
+Array: 9,4,1,6,3,8,2,10
+
+Take the first element, put it as the root. 
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/0}
+\centering
+\end{figure}
+
+Take the next element, and attach it to the bottom left. No reheaping necessary, because $4<9$. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/1}
+\centering
+\end{figure}
+
+Add the next element to the bottom right. No reheaping necessary. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/2}
+\centering
+\end{figure}
+
+
+Add the next element to the bottom left of $4$. Because $6>4$, a reheaping is necessary. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/3}
+\centering
+\end{figure}
+
+
+Reheaped. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/4}
+\centering
+\end{figure}
+
+
+Continue this algorithm until all elements have been added to the list (some steps omitted for clarity.)
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/0full}
+\centering
+\end{figure}
+
+Now, swap the root element (the max, 10) with the bottom right element (2), and delete the max element. This max element is the largest in the list. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/r10}
+\centering
+\end{figure}
+
+
+Now, reheap. From the bottom up, check if any elements are greater than their parents. 
+
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/m9}
+\centering
+\end{figure}
+
+Swap max key with bottom right key, delete max key, reheap. Append this deleted key to the deleted list. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/r9}
+\centering
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/m8}
+\centering
+\end{figure}
+
+Same as before. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/r8}
+\centering
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/m6}
+\centering
+\end{figure}
+
+Same again. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/r6}
+\centering
+\end{figure}
+
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/m4}
+\centering
+\end{figure}
+
+I'm getting tired. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/r4}
+\centering
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/m3}
+\centering
+\end{figure}
+
+So close to done. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/r3}
+\centering
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/m2}
+\centering
+\end{figure}
+
+One more....
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/r2}
+\centering
+\end{figure}
+
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./P16/m1}
+\centering
+\end{figure}
+
+And we're done. 
+
+Sorted list: 
+1,2,3,4,6,8,9,10
+
+
+
+
+\noindent\rule{8cm}{0.4pt}
+
+17. 
+
+
+\noindent\rule{8cm}{0.4pt}
+
+
+18. 
 
 
 \noindent\rule{8cm}{0.4pt}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  6 MAR 2019 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  6 MAR 2019 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -394,57 +394,207 @@ Package pdftex.def Info: ./P13/kruskals/5.png  used on input line 356.
  [4 <./P11/1.png> <./P11/2.png> <./P11/3.png> <./P11/4.png> <./P11/5.png> <./P1
 1/6.png> <./P11/7.png> <./P13/kruskals/1.png> <./P13/kruskals/2.png> <./P13/kru
 skals/3.png> <./P13/kruskals/4.png> <./P13/kruskals/5.png>]
-<./P13/prims/0.png, id=33, 361.35pt x 220.825pt>
+<./P13/prims/0.png, id=33, 387.4475pt x 223.83624pt>
 File: ./P13/prims/0.png Graphic file (type png)
 <use ./P13/prims/0.png>
-Package pdftex.def Info: ./P13/prims/0.png  used on input line 369.
-(pdftex.def)             Requested size: 180.67456pt x 110.41222pt.
-<./P13/prims/1.png, id=34, 363.3575pt x 216.81pt>
+Package pdftex.def Info: ./P13/prims/0.png  used on input line 366.
+(pdftex.def)             Requested size: 193.72327pt x 111.91785pt.
+<./P13/prims/1.png, id=34, 382.42876pt x 215.80624pt>
 File: ./P13/prims/1.png Graphic file (type png)
 <use ./P13/prims/1.png>
-Package pdftex.def Info: ./P13/prims/1.png  used on input line 373.
-(pdftex.def)             Requested size: 181.6783pt x 108.40472pt.
-<./P13/prims/2.png, id=35, 365.365pt x 219.82124pt>
+Package pdftex.def Info: ./P13/prims/1.png  used on input line 370.
+(pdftex.def)             Requested size: 191.2139pt x 107.90285pt.
+<./P13/prims/2.png, id=35, 390.45876pt x 225.84375pt>
 File: ./P13/prims/2.png Graphic file (type png)
 <use ./P13/prims/2.png>
-Package pdftex.def Info: ./P13/prims/2.png  used on input line 377.
-(pdftex.def)             Requested size: 182.68205pt x 109.91034pt.
-<./P13/prims/3.png, id=36, 373.395pt x 212.795pt>
+Package pdftex.def Info: ./P13/prims/2.png  used on input line 374.
+(pdftex.def)             Requested size: 195.2289pt x 112.92159pt.
+<./P13/prims/3.png, id=36, 372.39125pt x 235.88126pt>
 File: ./P13/prims/3.png Graphic file (type png)
 <use ./P13/prims/3.png>
-Package pdftex.def Info: ./P13/prims/3.png  used on input line 381.
-(pdftex.def)             Requested size: 186.69704pt x 106.39723pt.
-<./P13/prims/4.png, id=37, 390.45876pt x 211.79124pt>
+Package pdftex.def Info: ./P13/prims/3.png  used on input line 378.
+(pdftex.def)             Requested size: 186.19516pt x 117.94034pt.
+<./P13/prims/4.png, id=37, 367.3725pt x 216.81pt>
 File: ./P13/prims/4.png Graphic file (type png)
 <use ./P13/prims/4.png>
-Package pdftex.def Info: ./P13/prims/4.png  used on input line 385.
-(pdftex.def)             Requested size: 195.2289pt x 105.89536pt.
+Package pdftex.def Info: ./P13/prims/4.png  used on input line 382.
+(pdftex.def)             Requested size: 183.68579pt x 108.40472pt.
  [5 <./P13/prims/0.png> <./P13/prims/1.png> <./P13/prims/2.png> <./P13/prims/3.
 png> <./P13/prims/4.png>]
-<./P13/prims/5.png, id=41, 354.32375pt x 209.78375pt>
+<./P13/prims/5.png, id=41, 363.3575pt x 217.81375pt>
 File: ./P13/prims/5.png Graphic file (type png)
 <use ./P13/prims/5.png>
-Package pdftex.def Info: ./P13/prims/5.png  used on input line 390.
-(pdftex.def)             Requested size: 177.16144pt x 104.8916pt.
- [6 <./P13/prims/5.png>] (./HW2.aux) ) 
+Package pdftex.def Info: ./P13/prims/5.png  used on input line 387.
+(pdftex.def)             Requested size: 181.6783pt x 108.9066pt.
+ [6 <./P13/prims/5.png>]
+<./P14/final.png, id=46, 381.425pt x 252.945pt>
+File: ./P14/final.png Graphic file (type png)
+<use ./P14/final.png>
+Package pdftex.def Info: ./P14/final.png  used on input line 485.
+(pdftex.def)             Requested size: 190.71202pt x 126.47218pt.
+<./P15/0.png, id=47, 437.635pt x 93.34875pt>
+File: ./P15/0.png Graphic file (type png)
+<use ./P15/0.png>
+Package pdftex.def Info: ./P15/0.png  used on input line 510.
+(pdftex.def)             Requested size: 218.81696pt x 46.67426pt.
+<./P15/TN.png, id=48, 162.6075pt x 101.37875pt>
+File: ./P15/TN.png Graphic file (type png)
+<use ./P15/TN.png>
+Package pdftex.def Info: ./P15/TN.png  used on input line 517.
+(pdftex.def)             Requested size: 81.30354pt x 50.68924pt.
+<./P15/TN_Queue.png, id=49, 583.17876pt x 83.31125pt>
+File: ./P15/TN_Queue.png Graphic file (type png)
+<use ./P15/TN_Queue.png>
+Package pdftex.def Info: ./P15/TN_Queue.png  used on input line 524.
+(pdftex.def)             Requested size: 291.58867pt x 41.65552pt.
+<./P15/STN.png, id=50, 222.8325pt x 169.63374pt>
+File: ./P15/STN.png Graphic file (type png)
+<use ./P15/STN.png>
+Package pdftex.def Info: ./P15/STN.png  used on input line 533.
+(pdftex.def)             Requested size: 111.41597pt x 84.81665pt.
+<./P15/STN_Queue.png, id=51, 571.13374pt x 83.31125pt>
+File: ./P15/STN_Queue.png Graphic file (type png)
+<use ./P15/STN_Queue.png>
+Package pdftex.def Info: ./P15/STN_Queue.png  used on input line 538.
+(pdftex.def)             Requested size: 285.56618pt x 41.65552pt.
+ [7 <./P14/final.png> <./P15/0.png> <./P15/TN.png> <./P15/TN_Queue.png> <./P15/
+STN.png>]
+<./P15/ESTN.png, id=56, 270.00874pt x 166.6225pt>
+File: ./P15/ESTN.png Graphic file (type png)
+<use ./P15/ESTN.png>
+Package pdftex.def Info: ./P15/ESTN.png  used on input line 546.
+(pdftex.def)             Requested size: 135.00403pt x 83.31104pt.
+<./P15/Scored.png, id=57, 348.30125pt x 248.93pt>
+File: ./P15/Scored.png Graphic file (type png)
+<use ./P15/Scored.png>
+Package pdftex.def Info: ./P15/Scored.png  used on input line 554.
+(pdftex.def)             Requested size: 174.15019pt x 124.46469pt.
+<./P16/0.png, id=58, 62.2325pt x 57.21375pt>
+File: ./P16/0.png Graphic file (type png)
+<use ./P16/0.png>
+Package pdftex.def Info: ./P16/0.png  used on input line 576.
+(pdftex.def)             Requested size: 31.11617pt x 28.6068pt.
+<./P16/1.png, id=59, 117.43875pt x 107.40125pt>
+File: ./P16/1.png Graphic file (type png)
+<use ./P16/1.png>
+Package pdftex.def Info: ./P16/1.png  used on input line 583.
+(pdftex.def)             Requested size: 58.71922pt x 53.70049pt.
+<./P16/2.png, id=60, 143.53625pt x 120.45pt>
+File: ./P16/2.png Graphic file (type png)
+<use ./P16/2.png>
+Package pdftex.def Info: ./P16/2.png  used on input line 590.
+(pdftex.def)             Requested size: 71.76794pt x 60.22484pt.
+<./P16/3.png, id=61, 209.78375pt x 171.64125pt>
+File: ./P16/3.png Graphic file (type png)
+<use ./P16/3.png>
+Package pdftex.def Info: ./P16/3.png  used on input line 598.
+(pdftex.def)             Requested size: 104.8916pt x 85.8204pt.
+ [8 <./P15/STN_Queue.png> <./P15/ESTN.png> <./P15/Scored.png> <./P16/0.png> <./
+P16/1.png> <./P16/2.png>]
+<./P16/4.png, id=65, 204.765pt x 183.68625pt>
+File: ./P16/4.png Graphic file (type png)
+<use ./P16/4.png>
+Package pdftex.def Info: ./P16/4.png  used on input line 606.
+(pdftex.def)             Requested size: 102.38223pt x 91.84288pt.
+<./P16/0full.png, id=66, 514.92375pt x 243.91125pt>
+File: ./P16/0full.png Graphic file (type png)
+<use ./P16/0full.png>
+Package pdftex.def Info: ./P16/0full.png  used on input line 614.
+(pdftex.def)             Requested size: 257.46124pt x 121.95532pt.
+<./P16/r10.png, id=67, 527.9725pt x 229.85875pt>
+File: ./P16/r10.png Graphic file (type png)
+<use ./P16/r10.png>
+Package pdftex.def Info: ./P16/r10.png  used on input line 621.
+(pdftex.def)             Requested size: 263.9856pt x 114.92908pt.
+<./P16/m9.png, id=68, 475.7775pt x 180.675pt>
+File: ./P16/m9.png Graphic file (type png)
+<use ./P16/m9.png>
+Package pdftex.def Info: ./P16/m9.png  used on input line 630.
+(pdftex.def)             Requested size: 237.88815pt x 90.33727pt.
+<./P16/r9.png, id=69, 447.6725pt x 161.60374pt>
+File: ./P16/r9.png Graphic file (type png)
+<use ./P16/r9.png>
+Package pdftex.def Info: ./P16/r9.png  used on input line 637.
+(pdftex.def)             Requested size: 223.8357pt x 80.80167pt.
+ [9 <./P16/3.png> <./P16/4.png> <./P16/0full.png> <./P16/r10.png> <./P16/m9.png
+>]
+<./P16/m8.png, id=73, 403.5075pt x 173.64874pt>
+File: ./P16/m8.png Graphic file (type png)
+<use ./P16/m8.png>
+Package pdftex.def Info: ./P16/m8.png  used on input line 642.
+(pdftex.def)             Requested size: 201.75325pt x 86.82416pt.
+<./P16/r8.png, id=74, 392.46625pt x 178.6675pt>
+File: ./P16/r8.png Graphic file (type png)
+<use ./P16/r8.png>
+Package pdftex.def Info: ./P16/r8.png  used on input line 649.
+(pdftex.def)             Requested size: 196.23264pt x 89.33353pt.
+<./P16/m6.png, id=75, 417.56pt x 166.6225pt>
+File: ./P16/m6.png Graphic file (type png)
+<use ./P16/m6.png>
+Package pdftex.def Info: ./P16/m6.png  used on input line 654.
+(pdftex.def)             Requested size: 208.77948pt x 83.31104pt.
+<./P16/r6.png, id=76, 411.5375pt x 174.6525pt>
+File: ./P16/r6.png Graphic file (type png)
+<use ./P16/r6.png>
+Package pdftex.def Info: ./P16/r6.png  used on input line 661.
+(pdftex.def)             Requested size: 205.76825pt x 87.32603pt.
+<./P16/m4.png, id=77, 416.55624pt x 177.66376pt>
+File: ./P16/m4.png Graphic file (type png)
+<use ./P16/m4.png>
+Package pdftex.def Info: ./P16/m4.png  used on input line 667.
+(pdftex.def)             Requested size: 208.2776pt x 88.83165pt.
+<./P16/r4.png, id=78, 418.56375pt x 169.63374pt>
+File: ./P16/r4.png Graphic file (type png)
+<use ./P16/r4.png>
+Package pdftex.def Info: ./P16/r4.png  used on input line 674.
+(pdftex.def)             Requested size: 209.28136pt x 84.81665pt.
+ [10 <./P16/r9.png> <./P16/m8.png> <./P16/r8.png> <./P16/m6.png> <./P16/r6.png>
+ <./P16/m4.png>]
+<./P16/m3.png, id=82, 348.30125pt x 117.43875pt>
+File: ./P16/m3.png Graphic file (type png)
+<use ./P16/m3.png>
+Package pdftex.def Info: ./P16/m3.png  used on input line 679.
+(pdftex.def)             Requested size: 174.15019pt x 58.71922pt.
+<./P16/r3.png, id=83, 375.4025pt x 129.48375pt>
+File: ./P16/r3.png Graphic file (type png)
+<use ./P16/r3.png>
+Package pdftex.def Info: ./P16/r3.png  used on input line 686.
+(pdftex.def)             Requested size: 187.70079pt x 64.7417pt.
+<./P16/m2.png, id=84, 212.795pt x 116.435pt>
+File: ./P16/m2.png Graphic file (type png)
+<use ./P16/m2.png>
+Package pdftex.def Info: ./P16/m2.png  used on input line 691.
+(pdftex.def)             Requested size: 106.39723pt x 58.21735pt.
+<./P16/r2.png, id=85, 215.80624pt x 120.45pt>
+File: ./P16/r2.png Graphic file (type png)
+<use ./P16/r2.png>
+Package pdftex.def Info: ./P16/r2.png  used on input line 698.
+(pdftex.def)             Requested size: 107.90285pt x 60.22484pt.
+<./P16/m1.png, id=86, 65.24374pt x 57.21375pt>
+File: ./P16/m1.png Graphic file (type png)
+<use ./P16/m1.png>
+Package pdftex.def Info: ./P16/m1.png  used on input line 704.
+(pdftex.def)             Requested size: 32.62178pt x 28.6068pt.
+ [11 <./P16/r4.png> <./P16/m3.png> <./P16/r3.png> <./P16/m2.png> <./P16/r2.png>
+ <./P16/m1.png>] (./HW2.aux) ) 
 Here is how much of TeX's memory you used:
- 4153 strings out of 494923
- 57750 string characters out of 6180741
+ 4290 strings out of 494923
+ 59911 string characters out of 6180741
  151695 words of memory out of 5000000
- 7406 multiletter control sequences out of 15000+600000
+ 7518 multiletter control sequences out of 15000+600000
  5647 words of font info for 23 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,8n,32p,270b,1386s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb>
-Output written on HW2.pdf (6 pages, 293732 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on HW2.pdf (11 pages, 527644 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
