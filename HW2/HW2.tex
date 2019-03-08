@@ -62,6 +62,15 @@
 \centering
 \end{figure}
 
+
+TODO FIX THIS STUPID SORT YOU DUMB WALNUT GET SOME SLEEP
+
+DONT FORGET TO FIX THIS
+
+DONT FORGET TO FIX THIS
+
+FIX THIS BEFORE HANDING IN
+
 \noindent\rule{8cm}{0.4pt}
 
 
@@ -292,7 +301,18 @@ Efficiency of List: $\Theta(\|V\|+  \|E\|)$
 
 10. The greedy technique builds a solution piece by piece by picking the most obvious benefit first, without ever reconsidering a decision. It generates a globally optimal solution from a locally optimized choice. 
 
-TODO Greedy algorithm and the greedy choice property. 
+The greedy algorithm works when subproblems are perfect subsets without overlap of a larger problem. 
+
+For example, in the change making problem done in class:
+
+If the coin values are 1,5,10,25,50, a greedy algorithm WILL work in this case. This is because there is no coin value that cannot be made by a combination of smaller coins. 
+
+
+However, if the coin values are 1,5,10,15,25,50, a greedy algorithm will not find the optimal solution. This is because some combinations of smaller coins could make a more optimal solution than larger coins. 
+
+The greedy choice property: Generating a globally optimal solution from a locally optimized choice. 
+
+
 
 
 \noindent\rule{8cm}{0.4pt}
@@ -308,8 +328,7 @@ TODO Greedy algorithm and the greedy choice property.
 \includegraphics[scale=0.5]{./P11/6}
 \includegraphics[scale=0.5]{./P11/7}
 
-
-TODO FIND ALL SPANNING TREES. 
+I'm pretty sure I found all of them, however, I might be missing one. 
 
 \noindent\rule{8cm}{0.4pt}
 
@@ -717,12 +736,484 @@ Sorted list:
 
 17. 
 
+\begin{lstlisting}
+def quicksort(arr, left, right):
+  if(left < right):
+    print(arr) ###########
+    pivot = partition(arr, left, right)
+    print("^^Pivot = {}^^".format(arr[pivot])) ###########
+    print()
+    quicksort(arr, left, pivot - 1)
+    quicksort(arr, pivot + 1, right)
+  return arr
+
+def partition(arr, left, right):
+  pivot = left
+  left += 1
+  while True:
+    #While l<=r and l hasn't reached pivot yet
+    while left <= right and arr[left] < arr[pivot]:
+        #Shift left to the right
+      left += 1
+    #While l<r and r hasn't reached pivot 
+    while left <= right and arr[right] > arr[pivot]:
+        #Shift right to the left
+      right -= 1
+
+    #If left and right did not cross, swap them and continue
+    if left <= right:
+      swap(arr, left, right)
+      left += 1
+      right -=1
+    #Otherwise, break
+    if left > right:
+      break
+  #Swap algorithm 
+  swap(arr, right, pivot)
+  return right
+
+def swap(arr, a, b):
+    c = arr[a]
+    arr[a] = arr[b]
+    arr[b] = c
+
+
+def main():
+    # Driver code to test above 
+    arr = [9,8,7,6,5,4,3,2,1] 
+    print("Original list: ")
+    print(arr, sep=",")
+    print()
+    n = len(arr) 
+    print("Implementing quicksort:")
+    quicksort(arr,0,n-1) 
+    print(arr,sep=",") 
+    
+if __name__ == '__main__':
+    main()
+\end{lstlisting}
+
+
+\textbf{Output of quicksort}
+As python does not have a good debugger that I know of for Linux, I implemented print statements in strategic places to check that the correct pivot was being chosen. The two lines in the quicksort() function with the inline comments after them print out the array and the partition selected on that recursion. 
+
+
+\begin{lstlisting}
+Original list: 
+[9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+Implementing quicksort:
+[9, 8, 7, 6, 5, 4, 3, 2, 1]
+^^Pivot = 9^^
+
+[1, 8, 7, 6, 5, 4, 3, 2, 9]
+^^Pivot = 1^^
+
+[1, 8, 7, 6, 5, 4, 3, 2, 9]
+^^Pivot = 8^^
+
+[1, 2, 7, 6, 5, 4, 3, 8, 9]
+^^Pivot = 2^^
+
+[1, 2, 7, 6, 5, 4, 3, 8, 9]
+^^Pivot = 7^^
+
+[1, 2, 3, 6, 5, 4, 7, 8, 9]
+^^Pivot = 3^^
+
+[1, 2, 3, 6, 5, 4, 7, 8, 9]
+^^Pivot = 6^^
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+^^Pivot = 4^^
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+\end{lstlisting}
+
+
+\textbf{MergeSort}
+
+As with quicksort, I did not have an official debugger to use to check memory values. 
+However, I did use a slight modification of merge sort to check which side of the array was being sorted. The character $s$ passed into the $mergesort()$ function tells the function whether it's sorting the left or the right side. As you can see in the output below, the program prints which side it's working on, and what the value of the array is at that point in the running of the program. 
+
+\begin{lstlisting}
+def mergeSort(arr,s=""): 
+    _ = input("cont?")
+    if len(arr) >1: 
+        mid = len(arr)//2 #Using integer division
+        L = arr[0:mid] # Dividing the array elements  
+        R = arr[mid:len(arr)] # into 2 halves 
+  
+        #Recursively sort the arrays
+        if(s=='r'):
+            print("Sorting Right Side")
+        print("Array value in this recursion: ", arr)
+        mergeSort(R, 'r')
+        print()
+
+        if(s=='l'):
+            print("Sorting Left Side")
+        print("Array value in this recursion: ", arr)
+        mergeSort(L, 'l')
+        print()
+  
+        i = 0
+        j = 0
+        k = 0
+          
+        #Copy the first half of the array in L to the first half 
+        #of the main array, and the second half of the array in R
+        # to the second half of the main array.  
+        while i < len(L) and j < len(R): 
+            if L[i] < R[j]: 
+                arr[k] = L[i] 
+                i+=1
+            else: 
+                arr[k] = R[j] 
+                j+=1
+            k+=1
+          
+        #If any elements are left, fill them in automagically
+        while i < len(L): 
+            arr[k] = L[i] 
+            i+=1
+            k+=1
+          
+        while j < len(R): 
+            arr[k] = R[j] 
+            j+=1
+            k+=1
+  
+# Code to print the list 
+def printList(arr): 
+    for i in range(len(arr)):         
+        print(arr[i],end=" ") 
+    print() 
+  
+def main():
+    arr = [1,5,3,9,7,12,15,45,96]  
+    print ("Given array is", end="\n")  
+    printList(arr) 
+    mergeSort(arr) 
+    print("Sorted array is: ", end="\n") 
+    printList(arr) 
+
+if __name__ == '__main__':
+    main()
+
+\end{lstlisting}
+
+\begin{lstlisting}
+Given array is
+1 5 3 9 7 12 15 45 96 
+cont?
+Array value in this recursion:  [1, 5, 3, 9, 7, 12, 15, 45, 96]
+cont?
+Sorting Right Side
+Array value in this recursion:  [7, 12, 15, 45, 96]
+cont?
+Sorting Right Side
+Array value in this recursion:  [15, 45, 96]
+cont?
+Sorting Right Side
+Array value in this recursion:  [45, 96]
+cont?
+
+Array value in this recursion:  [45, 96]
+cont?
+
+
+Array value in this recursion:  [15, 45, 96]
+cont?
+
+
+Array value in this recursion:  [7, 12, 15, 45, 96]
+cont?
+Array value in this recursion:  [7, 12]
+cont?
+
+Sorting Left Side
+Array value in this recursion:  [7, 12]
+cont?
+
+
+
+Array value in this recursion:  [1, 5, 3, 9, 7, 12, 15, 45, 96]
+cont?
+Array value in this recursion:  [1, 5, 3, 9]
+cont?
+Sorting Right Side
+Array value in this recursion:  [3, 9]
+cont?
+
+Array value in this recursion:  [3, 9]
+cont?
+
+
+Sorting Left Side
+Array value in this recursion:  [1, 5, 3, 9]
+cont?
+Array value in this recursion:  [1, 5]
+cont?
+
+Sorting Left Side
+Array value in this recursion:  [1, 5]
+cont?
+
+
+
+Sorted array is: 
+1 3 5 7 9 12 15 45 96 
+\end{lstlisting}
+
+
 
 \noindent\rule{8cm}{0.4pt}
 
 
 18. 
 
+\textbf{Depth first algorithm}
+
+\begin{lstlisting}
+def dfs(graph, start, visited=None, round=0):
+
+    #If no nodes have been visited, create 
+    # an empty set for adding. 
+    if visited is None:
+        print("No nodes visited. Creating empty list. ")
+        visited = set()
+
+    # Add the starting node for this recursion
+    # to the visited stack
+    visited.add(start)
+
+    #Increment a round counter
+    round += 1
+    print("\n--->Round {}<---".format(round))
+
+    #Print out the visited nodes.
+    print("Nodes visited -->{}<--".format(visited))
+
+    print("Visiting {}.".format(start))
+    for next in graph[start] - visited:
+        print("Checking node {}".format(next))
+
+        #Recursively continue through graph
+        #Code referenced from https://www.programiz.com/dsa/graph-dfs
+        dfs(graph, next, visited, round)
+    return visited
+
+def getInput():
+
+    graph = {}
+
+    num = int(input("Enter the number of nodes in the graph >> "))
+
+    for i in range(num):
+
+        i = str(i)
+
+        key = []
+
+        line = input("Enter the nodes attached to node {}>> ".format(i))
+
+        for number in line:
+            if number.isdigit():
+                key.append(number)
+
+        graph[i] = set(key)
+
+
+    return graph
+
+def main():
+    dfs(getInput(), '0')
+if __name__ == '__main__':
+    main()
+\end{lstlisting}
+
+\textbf{Output of BFS:}
+
+\begin{lstlisting}
+Enter the number of nodes in the graph >> 7
+Enter the nodes attached to node 0>> 1,2
+Enter the nodes attached to node 1>> 0,3,4
+Enter the nodes attached to node 2>> 0,5,6
+Enter the nodes attached to node 3>> 1
+Enter the nodes attached to node 4>> 1
+Enter the nodes attached to node 5>> 2
+Enter the nodes attached to node 6>> 2
+No nodes visited. Creating empty list. 
+
+--->Round 1<---
+Nodes visited -->{'0'}<--
+Visiting 0.
+Checking node 2
+
+--->Round 2<---
+Nodes visited -->{'2', '0'}<--
+Visiting 2.
+Checking node 5
+
+--->Round 3<---
+Nodes visited -->{'2', '0', '5'}<--
+Visiting 5.
+Checking node 6
+
+--->Round 3<---
+Nodes visited -->{'2', '0', '5', '6'}<--
+Visiting 6.
+Checking node 1
+
+--->Round 2<---
+Nodes visited -->{'6', '5', '2', '0', '1'}<--
+Visiting 1.
+Checking node 4
+
+--->Round 3<---
+Nodes visited -->{'6', '4', '5', '2', '0', '1'}<--
+Visiting 4.
+Checking node 3
+
+--->Round 3<---
+Nodes visited -->{'6', '4', '5', '2', '0', '3', '1'}<--
+Visiting 3.
+
+
+\end{lstlisting}
+
+
+\textbf{Breadth First Search}
+\begin{lstlisting}
+import collections
+
+#Define the bfs algorithm
+def bfs(g, rootnode):
+
+    #Use set() to create an empty set
+    #This is the set of visited nodes, which 
+    # we will add to as we progress through 
+    # the graph
+    visited = set()
+
+    #Dequeue the first element in the list
+    queue = collections.deque([rootnode])
+
+    #Now that the root node has been dequeued,
+    # add it to the visited set. We will not visit
+    # this node again. 
+    visited.add(rootnode)
+
+    #Use a counter to keep track of rounds
+    round = 0
+
+    while queue: 
+        print("\nRound {}".format(round))
+
+        #Dequeue the first element in the list. 
+        vertex = queue.popleft()
+        print("Popped vertex {} from queue".format(vertex))
+
+
+        #Find each neighbor for the vertex
+        for neighbor in g[vertex]: 
+            print("Checking neighbor {}".format(neighbor))
+            if neighbor not in visited: 
+                print("Visiting node {0} on round {1}".format(neighbor, round))
+
+                #Now that it has been visited, add the
+                # neighbor to the visisted set. 
+                visited.add(neighbor) 
+
+                #Also, queue the neighbor 
+                # to be visited in a future round. 
+                queue.append(neighbor) 
+            else:
+                print("Node {0} has already been visited.".format(neighbor))
+        #Increment the counter. 
+        round += 1
+
+def getInput():
+    graph = {}
+    num = int(input("Enter the number of nodes in the graph >> "))
+    for i in range(num):
+        key = []
+
+        line = input("Enter the nodes attached to node {}>> ".format(i))
+        for number in line:
+            if number.isdigit():
+                key.append(int(number))
+        graph[i] = key
+    return graph
+
+def main():
+    bfs(getInput(), 0)
+
+
+if __name__ == '__main__':
+    main()
+\end{lstlisting}
+
+
+\textbf{Output of BFS}
+\begin{lstlisting}
+Enter the number of nodes in the graph >> 7
+Enter the nodes attached to node 0>> 1,2
+Enter the nodes attached to node 1>> 0,3,4
+Enter the nodes attached to node 2>> 0,5,6
+Enter the nodes attached to node 3>> 1   
+Enter the nodes attached to node 4>> 1
+Enter the nodes attached to node 5>> 2
+Enter the nodes attached to node 6>> 2
+
+Round 0
+Popped vertex 0 from queue
+Checking neighbor 1
+Visiting node 1 on round 0
+Checking neighbor 2
+Visiting node 2 on round 0
+
+Round 1
+Popped vertex 1 from queue
+Checking neighbor 0
+Node 0 has already been visited.
+Checking neighbor 3
+Visiting node 3 on round 1
+Checking neighbor 4
+Visiting node 4 on round 1
+
+Round 2
+Popped vertex 2 from queue
+Checking neighbor 0
+Node 0 has already been visited.
+Checking neighbor 5
+Visiting node 5 on round 2
+Checking neighbor 6
+Visiting node 6 on round 2
+
+Round 3
+Popped vertex 3 from queue
+Checking neighbor 1
+Node 1 has already been visited.
+
+Round 4
+Popped vertex 4 from queue
+Checking neighbor 1
+Node 1 has already been visited.
+
+Round 5
+Popped vertex 5 from queue
+Checking neighbor 2
+Node 2 has already been visited.
+
+Round 6
+Popped vertex 6 from queue
+Checking neighbor 2
+Node 2 has already been visited.
+
+\end{lstlisting}
 
 \noindent\rule{8cm}{0.4pt}
 

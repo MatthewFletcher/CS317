@@ -1,18 +1,21 @@
-def mergeSort(arr): 
+def mergeSort(arr,s=""): 
+    _ = input("cont?")
     if len(arr) >1: 
-        mid = len(arr)//2
+        mid = len(arr)//2 #Using integer division
         L = arr[0:mid] # Dividing the array elements  
         R = arr[mid:len(arr)] # into 2 halves 
   
         #Recursively sort the arrays
-        print("Sorting Right Side")
+        if(s=='r'):
+            print("Sorting Right Side")
         print("Array value in this recursion: ", arr)
-        mergeSort(R)
+        mergeSort(R, 'r')
         print()
 
-        print("Sorting Left Side")
+        if(s=='l'):
+            print("Sorting Left Side")
         print("Array value in this recursion: ", arr)
-        mergeSort(L)
+        mergeSort(L, 'l')
         print()
   
         i = 0
@@ -48,13 +51,13 @@ def printList(arr):
         print(arr[i],end=" ") 
     print() 
   
-# driver code to test the above code 
-if __name__ == '__main__': 
-    arr = [12, 11, 13, 5, 6, 7]  
+def main():
+    arr = [1,5,3,9,7,12,15,45,96]  
     print ("Given array is", end="\n")  
     printList(arr) 
     mergeSort(arr) 
     print("Sorted array is: ", end="\n") 
     printList(arr) 
-  
-# This code is contributed by Mayank Khanna 
+
+if __name__ == '__main__':
+    main()
