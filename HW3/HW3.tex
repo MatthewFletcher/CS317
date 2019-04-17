@@ -40,12 +40,36 @@
 %Q2 Matrix Chain Multiplication 
 \item  
     \begin{enumerate}
-        \item Step 1 is finding the optimal substructure and using it to construct an optimal solution to the subproblems. 
+        \item Step 1 is finding the optimal substructure and using it to construct an optimal solution to the subproblems. By finding an optimal parenthesization of a subset of the matrices, we can use that subset to find an optimal parenthensization of the full set of matrices. 
+
+        \item Now, define the cost of an optimal solution recursively in terms of the optimal solution to subproblems. 
+
+        \item Compute the optimal costs. Without dynamic programming, this algorithm would take exponential time. We can compute the optimal costs using a tabular method. 
+            The Matrix Chain order defined in the text results in an $O(n^3)$ algorithm instead of an exponential algorithm that would result from a brute force approach. 
+
+        \item The Matrix Chain order defined in the previous problem determines the number of multiplications required but not directly how to multiply them.  The table produced gives us the required information. 
     \end{enumerate}
 \noindent\rule{8cm}{0.4pt}
 
+
 %Q3 Longest Common Subsequence
-\item TODO finish in spreadsheet.
+\item  
+    
+    \begin{enumerate}
+        \item A brute force solution to this problem would result in an exponential algorithm. The LCS problem has an optimal substructure property, however. In other words, a solution to a subproblem can be re-used in further steps. 
+            
+
+        \item The recursive solution to the LCS problem involves establishing a recurrence for the value of an optimal solution. This is the LCS of $X_{i-1}$ and $Y_{i-1}$ if the two characters at matching locations are equal. Otherwise, find the LCS of $X$ and $Y_{i-1}$. 
+
+        \item The algorithm takes 2 sequences $X$ and $Y$ and stored them in a table. This table is filled out in row-major order. Each cell in the table points to the table entry containing the optimal subproblem solution. This allows a solution to be found after filling out the table.
+            
+
+        \item  The table filled with the arrows allows for a constrcution of the LCS. Trace through the table following the arrows, and whenever a diagonal arrow is encountered, it implied that that particular row/column is a solution of the LCS. Hence, a solution is easily found. 
+            
+    \end{enumerate}
+
+    TODO TODO TODO TODO TODO 
+    TODO finish in spreadsheet.
 
 \noindent\rule{8cm}{0.4pt}
 
@@ -84,10 +108,83 @@ E & 3 & 5 & $\infty$ & 4 & 0 \\ \hline
 \end{tabular}
 \end{table}
 
+Now do the same through B. 
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+ & A & B & C & D & E \\ \hline
+A & 0 & 2 & 5 & 1 & 8 \\ \hline
+B & 6 & 0 & 3 & 2 & 14 \\ \hline
+C & $\infty$ & $\infty$ & 0 & 4 & $\infty$ \\ \hline
+D & $\infty$ & $\infty$ & 2 & 0 & 3 \\ \hline
+E & 3 & 5 & $\infty$ & 4 & 0 \\ \hline
+\end{tabular}
+\end{table}
+
+Node C: Nothing is optimized, table is unchanged. 
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+ & A & B & C & D & E \\ \hline
+A & 0 & 2 & 5 & 1 & 8 \\ \hline
+B & 6 & 0 & 3 & 2 & 14 \\ \hline
+C & $\infty$ & $\infty$ & 0 & 4 & $\infty$ \\ \hline
+D & $\infty$ & $\infty$ & 2 & 0 & 3 \\ \hline
+E & 3 & 5 & $\infty$ & 4 & 0 \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+ & A & B & C & D & E \\ \hline
+A & 0 & 2 & 3 & 1 & 4 \\ \hline
+B & 6 & 0 & 3 & 2 & 5 \\ \hline
+C & $\infty$ & $\infty$ & 0 & 4 & 7 \\ \hline
+D & $\infty$ & $\infty$ & 2 & 0 & 3 \\ \hline
+E & 3 & 5 & 6 & 4 & 0 \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+ & A & B & C & D & E \\ \hline
+A & 0 & 2 & 3 & 1 & 4 \\ \hline
+B & 6 & 0 & 3 & 2 & 5 \\ \hline
+C & 10 & 12 & 0 & 4 & 7 \\ \hline
+D & 6 & 8 & 2 & 0 & 3 \\ \hline
+E & 3 & 5 & 6 & 4 & 0 \\ \hline
+\end{tabular}
+\end{table}
+
+
+
 \noindent\rule{8cm}{0.4pt}
 
 %Q5 Knapsack Question
 \item The knapsack problem is as follows: "Given n items of weights $w_i$ and values $v_j$, and a knapsack of capacity W, find the most valuable subset of the items that fit into the knapsack. The dynamic approach to solving the knapsack problem consists of breaking the set of all the subsets of the first $i$ items that fit the knapscak of capacity $J$ into 2 categories: those that do not include the $i^{th}$ item and those that do. 
+
+Use a table to reduce the number of recalculations needed.
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+ & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+1 & 0 & 0 & 0 & 25 & 25 & 25 & 25 \\ \hline
+2 & 0 & 0 & 20 & 25 & 25 & 45 & 45 \\ \hline
+3 & 0 & 15 & 20 & 35 & 40 & 45 & 45 \\ \hline
+4 & 0 & 15 & 20 & 35 & 40 & 55 & 60 \\ \hline
+5 & 0 & 15 & 20 & 35 & 40 & 55 & 65 \\ \hline
+\end{tabular}
+\end{table}
+
+Items 3 and 5 will create the optimal solution of \$65 in the knapsack. TODO CHECK  
 
 \noindent\rule{8cm}{0.4pt}
 
