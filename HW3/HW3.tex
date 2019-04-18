@@ -68,8 +68,22 @@
             
     \end{enumerate}
 
-    TODO TODO TODO TODO TODO 
-    TODO finish in spreadsheet.
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+ & y & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 \\ \hline
+x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+1 & 0 & 0\textasciicircum{} & 1\textbackslash{} & 1\textless{} & 1\textbackslash{} & 1\textbackslash{} & 1\textless{} & 1\textbackslash{} & 1\textbackslash{} & 1\textless{} \\ \hline
+0 & 0 & 1\textbackslash{} & 1\textasciicircum{} & 2\textbackslash{} & 2\textless{} & 2\textless{} & 2\textbackslash{} & 2\textless{} & 2\textless{} & 2\textbackslash{} \\ \hline
+0 & 0 & 1\textbackslash{} & 1\textasciicircum{} & 2\textbackslash{} & 2\textasciicircum{} & 2\textasciicircum{} & 3\textbackslash{} & 3\textless{} & 3\textless{} & 3\textbackslash{} \\ \hline
+1 & 0 & 1\textasciicircum{} & 2\textbackslash{} & 2\textasciicircum{} & 3\textbackslash{} & 4\textbackslash{} & 4\textless{} & 4\textbackslash{} & 4\textbackslash{} & 4\textless{} \\ \hline
+0 & 0 & 1\textbackslash{} & 2\textasciicircum{} & 2\textbackslash{} & 3\textasciicircum{} & 4\textasciicircum{} & 5\textbackslash{} & 5\textless{} & 5\textless{} & 5\textbackslash{} \\ \hline
+1 & 0 & 1\textasciicircum{} & 2\textbackslash{} & 2\textasciicircum{} & 3\textbackslash{} & 4\textbackslash{} & 5\textasciicircum{} & 6\textbackslash{} & 6\textless{} & 6\textless{} \\ \hline
+0 & 0 & 1\textbackslash{} & 2\textasciicircum{} & 2\textbackslash{} & 3\textasciicircum{} & 4\textasciicircum{} & 5\textbackslash{} & 6\textasciicircum{} & 6\textasciicircum{} & 6\textbackslash{} \\ \hline
+1 & 0 & 1\textasciicircum{} & 2\textbackslash{} & 3\textasciicircum{} & 4\textbackslash{} & 5\textbackslash{} & 5\textasciicircum{} & 6\textbackslash{} & 7\textbackslash{} & 7\textasciicircum{} \\ \hline
+\end{tabular}
+\end{table}
+
 
 \noindent\rule{8cm}{0.4pt}
 
@@ -184,7 +198,7 @@ Use a table to reduce the number of recalculations needed.
 \end{tabular}
 \end{table}
 
-Items 3 and 5 will create the optimal solution of \$65 in the knapsack. TODO CHECK  
+Items 3 and 5 will create the optimal solution of \$65 in the knapsack. 
 
 \noindent\rule{8cm}{0.4pt}
 
@@ -291,9 +305,6 @@ Q & | & / & \textbackslash{} \\ \hline
 As all 4 queens have been placed, and no 2 are in the same row, column, or diagonal, this is the final solution to the problem. 
 
 
-
-
-
 \noindent\rule{8cm}{0.4pt}
 
 %Q8 Branch and Bound
@@ -311,7 +322,6 @@ Item & Weight & Value & Val/Weight \\ \hline
 \end{table}
 
 
-%TODO FINISH
 \begin{figure}[H]
         \centering
 	\includegraphics[width=0.7\textwidth]{P8/branchandbound}
@@ -322,26 +332,55 @@ Therefore, the optimal solution takes items 1 and 2, with a value of 72.
 \noindent\rule{8cm}{0.4pt}
 
 %Q9 Huffman Encoding 
-\item The following table contains the output of a huffman encoder written in Python. TODO finish.
-\begin{lstlisting}
- Char | Freq  | Huffman code
------------------------------
- 'i'  |     7 |           10
- 't'  |     3 |          010
- 'o'  |     2 |          000
- 'n'  |     2 |         0111
- 'a'  |     2 |         0110
- 'b'  |     2 |         1101
- 'u'  |     2 |         1100
- 'h'  |     1 |         0010
- 'r'  |     1 |        00111
- 'f'  |     1 |        00110
- 'c'  |     1 |        11101
- 'l'  |     1 |        11100
- 'd'  |     1 |        11111
- 's'  |     1 |        11110
+\item  The given word is Honorificabilitudinitatibus. 
 
-\end{lstlisting}
+    This table contains the frequencies of each letter. 
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+i & t & u & o & n & b & a & s & r & l & h & f & d & c \\ \hline
+7 & 3 & 2 & 2 & 2 & 2 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline
+\end{tabular}
+\end{table}
+
+Now, begin by placing these in a minimum priority queue. 
+
+\begin{figure}[H]
+	\includegraphics[width=0.7\textwidth]{P9/queue}
+\end{figure}
+
+
+Take the first 2 elements out of the queue, place them into a binary tree, and place the root node of that tree back into the minimum priority queue, putting it as far forward in the queue as it will go. 
+
+Repeat this step until all nodes have been placed in the tree. 
+\begin{figure}[H]
+	\includegraphics[width=0.7\textwidth]{P9/tree}
+\end{figure}
+
+Now, go down the tree. Every time you travel left, put a 0. Every time you go right, put a 1. 
+
+
+\begin{figure}[H]
+	\includegraphics[width=0.7\textwidth]{P9/tree_num}
+\end{figure}
+
+For each of the leaf nodes, this represents the encoding used for that character. 
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+h & o & n & r & i & f & c & a & b & l & t & u & d & s \\ \hline
+11101 & 0111 & 0110 & 00111 & 10 & 11100 & 11110 & 1100 & 1101 & 00110 & 010 & 000 & 11111 & 0010 \\ \hline
+\end{tabular}
+\end{table}
+
+Now, replace each letter in the word with its corresponding value. 
+
+11101011101100111001111011100101111011001101100011010010000111111001101001011000101011010000010
+
+This is 95 characters, compared to the ASCII encoding of $27 \times 8 = 216$ 
+
+Therefore, the encoding ratio is $\frac{95}{216} = 43.98\%$
 
 \noindent\rule{8cm}{0.4pt}
 

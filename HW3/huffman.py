@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-
-DEBUG = False
+import sys
+DEBUG = True
 string = """honorificabilitudinitatibus"""
 
 
