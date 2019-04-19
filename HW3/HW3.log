@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  18 APR 2019 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  18 APR 2019 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,173 +588,180 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 76.
+<P3/final.png, id=1, 513.92pt x 251.94125pt>
+File: P3/final.png Graphic file (type png)
+<use P3/final.png>
+Package pdftex.def Info: P3/final.png  used on input line 91.
+(pdftex.def)             Requested size: 513.91873pt x 251.94063pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<P4/graph.png, id=14, 214.8025pt x 188.705pt>
+<P4/graph.png, id=16, 214.8025pt x 188.705pt>
 File: P4/graph.png Graphic file (type png)
 <use P4/graph.png>
-Package pdftex.def Info: P4/graph.png  used on input line 95.
+Package pdftex.def Info: P4/graph.png  used on input line 101.
 (pdftex.def)             Requested size: 214.80197pt x 188.70453pt.
- [2 <./P4/graph.png>] [3]
-<P8/branchandbound.png, id=21, 794.97pt x 614.295pt>
+ [2 <./P3/final.png> <./P4/graph.png>] [3]
+[4]
+<P8/branchandbound.png, id=26, 794.97pt x 614.295pt>
 File: P8/branchandbound.png Graphic file (type png)
 <use P8/branchandbound.png>
-Package pdftex.def Info: P8/branchandbound.png  used on input line 327.
+Package pdftex.def Info: P8/branchandbound.png  used on input line 336.
 (pdftex.def)             Requested size: 379.41585pt x 293.18977pt.
- [4]
-<P9/queue.png, id=26, 694.595pt x 94.3525pt>
+ [5 <./P8/branchandbound.png>]
+<P9/queue.png, id=32, 694.595pt x 94.3525pt>
 File: P9/queue.png Graphic file (type png)
 <use P9/queue.png>
-Package pdftex.def Info: P9/queue.png  used on input line 349.
+Package pdftex.def Info: P9/queue.png  used on input line 358.
 (pdftex.def)             Requested size: 379.41585pt x 51.54129pt.
-<P9/tree.png, id=27, 768.8725pt x 392.46625pt>
+<P9/tree.png, id=33, 768.8725pt x 392.46625pt>
 File: P9/tree.png Graphic file (type png)
 <use P9/tree.png>
-Package pdftex.def Info: P9/tree.png  used on input line 357.
+Package pdftex.def Info: P9/tree.png  used on input line 366.
 (pdftex.def)             Requested size: 379.41585pt x 193.67552pt.
- [5 <./P8/branchandbound.png> <./P9/queue.png>]
-<P9/tree_num.png, id=32, 782.925pt x 417.56pt>
+<P9/tree_num.png, id=34, 782.925pt x 417.56pt>
 File: P9/tree_num.png Graphic file (type png)
 <use P9/tree_num.png>
-Package pdftex.def Info: P9/tree_num.png  used on input line 364.
+Package pdftex.def Info: P9/tree_num.png  used on input line 373.
 (pdftex.def)             Requested size: 379.41585pt x 202.35706pt.
-<P10/0-15.png, id=33, 62.2325pt x 45.16875pt>
+ [6 <./P9/queue.png> <./P9/tree.png> <./P9/tree_num.png>]
+<P10/0-15.png, id=38, 62.2325pt x 45.16875pt>
 File: P10/0-15.png Graphic file (type png)
 <use P10/0-15.png>
-Package pdftex.def Info: P10/0-15.png  used on input line 393.
+Package pdftex.def Info: P10/0-15.png  used on input line 402.
 (pdftex.def)             Requested size: 62.23235pt x 45.16862pt.
-<P10/1-26.png, id=34, 104.39pt x 88.33pt>
+<P10/1-26.png, id=39, 104.39pt x 88.33pt>
 File: P10/1-26.png Graphic file (type png)
 <use P10/1-26.png>
-Package pdftex.def Info: P10/1-26.png  used on input line 394.
+Package pdftex.def Info: P10/1-26.png  used on input line 403.
 (pdftex.def)             Requested size: 104.38972pt x 88.32977pt.
-<P10/2-30.png, id=35, 160.6pt x 133.49875pt>
+<P10/2-30.png, id=40, 160.6pt x 133.49875pt>
 File: P10/2-30.png Graphic file (type png)
 <use P10/2-30.png>
-Package pdftex.def Info: P10/2-30.png  used on input line 395.
+Package pdftex.def Info: P10/2-30.png  used on input line 404.
 (pdftex.def)             Requested size: 160.5996pt x 133.4984pt.
-<P10/3-31.png, id=36, 220.825pt x 179.67125pt>
+<P10/3-31.png, id=41, 220.825pt x 179.67125pt>
 File: P10/3-31.png Graphic file (type png)
 <use P10/3-31.png>
-Package pdftex.def Info: P10/3-31.png  used on input line 396.
+Package pdftex.def Info: P10/3-31.png  used on input line 405.
 (pdftex.def)             Requested size: 220.82445pt x 179.67079pt.
-<P10/4-17.png, id=37, 221.82875pt x 167.62625pt>
+<P10/4-17.png, id=42, 221.82875pt x 167.62625pt>
 File: P10/4-17.png Graphic file (type png)
 <use P10/4-17.png>
-Package pdftex.def Info: P10/4-17.png  used on input line 397.
+Package pdftex.def Info: P10/4-17.png  used on input line 406.
 (pdftex.def)             Requested size: 221.82819pt x 167.62582pt.
-<P10/5-18.png, id=38, 292.09125pt x 150.5625pt>
+<P10/5-18.png, id=43, 292.09125pt x 150.5625pt>
 File: P10/5-18.png Graphic file (type png)
 <use P10/5-18.png>
-Package pdftex.def Info: P10/5-18.png  used on input line 398.
+Package pdftex.def Info: P10/5-18.png  used on input line 407.
 (pdftex.def)             Requested size: 292.09052pt x 150.56212pt.
-<P10/6-10.png, id=39, 434.62375pt x 155.58125pt>
+<P10/6-10.png, id=44, 434.62375pt x 155.58125pt>
 File: P10/6-10.png Graphic file (type png)
 <use P10/6-10.png>
-Package pdftex.def Info: P10/6-10.png  used on input line 399.
+Package pdftex.def Info: P10/6-10.png  used on input line 408.
 (pdftex.def)             Requested size: 434.62268pt x 155.58086pt.
-<P10/7-8.png, id=40, 516.93124pt x 183.68625pt>
+<P10/7-8.png, id=45, 516.93124pt x 183.68625pt>
 File: P10/7-8.png Graphic file (type png)
 <use P10/7-8.png>
-Package pdftex.def Info: P10/7-8.png  used on input line 400.
+Package pdftex.def Info: P10/7-8.png  used on input line 409.
 (pdftex.def)             Requested size: 516.92998pt x 183.68578pt.
 
-Overfull \hbox (12.68774pt too wide) in paragraph at lines 393--401
+Overfull \hbox (12.68774pt too wide) in paragraph at lines 402--410
 [][] [] [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--401
+Underfull \hbox (badness 10000) in paragraph at lines 402--410
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--401
+Underfull \hbox (badness 10000) in paragraph at lines 402--410
 []
  []
 
-[6 <./P9/tree.png> <./P9/tree_num.png>]
-<P10/8-11.png, id=44, 501.875pt x 153.57375pt>
+[7]
+<P10/8-11.png, id=50, 501.875pt x 153.57375pt>
 File: P10/8-11.png Graphic file (type png)
 <use P10/8-11.png>
-Package pdftex.def Info: P10/8-11.png  used on input line 404.
+Package pdftex.def Info: P10/8-11.png  used on input line 413.
 (pdftex.def)             Requested size: 501.87376pt x 153.57336pt.
-<P10/9-13.png, id=45, 522.95375pt x 173.64874pt>
+<P10/9-13.png, id=51, 522.95375pt x 173.64874pt>
 File: P10/9-13.png Graphic file (type png)
 <use P10/9-13.png>
-Package pdftex.def Info: P10/9-13.png  used on input line 405.
+Package pdftex.def Info: P10/9-13.png  used on input line 414.
 (pdftex.def)             Requested size: 522.95247pt x 173.64832pt.
-<P10/10-14.png, id=46, 536.0025pt x 189.70876pt>
+<P10/10-14.png, id=52, 536.0025pt x 189.70876pt>
 File: P10/10-14.png Graphic file (type png)
 <use P10/10-14.png>
-Package pdftex.def Info: P10/10-14.png  used on input line 406.
+Package pdftex.def Info: P10/10-14.png  used on input line 415.
 (pdftex.def)             Requested size: 536.00119pt x 189.70828pt.
-<P10/11-12.png, id=47, 494.84875pt x 188.705pt>
+<P10/11-12.png, id=53, 494.84875pt x 188.705pt>
 File: P10/11-12.png Graphic file (type png)
 <use P10/11-12.png>
-Package pdftex.def Info: P10/11-12.png  used on input line 407.
+Package pdftex.def Info: P10/11-12.png  used on input line 416.
 (pdftex.def)             Requested size: 494.84755pt x 188.70453pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--408
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--408
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--408
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
 []
  []
 
-[7 <./P10/0-15.png> <./P10/1-26.png> <./P10/2-30.png> <./P10/3-31.png> <./P10/4
--17.png> <./P10/5-18.png> <./P10/6-10.png> <./P10/7-8.png>] [8 <./P10/8-11.png>
+[8 <./P10/0-15.png> <./P10/1-26.png> <./P10/2-30.png> <./P10/3-31.png> <./P10/4
+-17.png> <./P10/5-18.png> <./P10/6-10.png> <./P10/7-8.png>] [9 <./P10/8-11.png>
  <./P10/9-13.png> <./P10/10-14.png> <./P10/11-12.png>]
-<P11/full.png, id=55, 500.87125pt x 383.4325pt>
+<P11/full.png, id=60, 500.87125pt x 383.4325pt>
 File: P11/full.png Graphic file (type png)
 <use P11/full.png>
-Package pdftex.def Info: P11/full.png  used on input line 421.
+Package pdftex.def Info: P11/full.png  used on input line 430.
 (pdftex.def)             Requested size: 379.41585pt x 290.46976pt.
-<P11/20.png, id=56, 510.90875pt x 383.4325pt>
+<P11/20.png, id=61, 510.90875pt x 383.4325pt>
 File: P11/20.png Graphic file (type png)
 <use P11/20.png>
-Package pdftex.def Info: P11/20.png  used on input line 429.
+Package pdftex.def Info: P11/20.png  used on input line 438.
 (pdftex.def)             Requested size: 379.41585pt x 284.74777pt.
-<P11/25.png, id=57, 508.90125pt x 385.44pt>
+<P11/25.png, id=62, 508.90125pt x 385.44pt>
 File: P11/25.png Graphic file (type png)
 <use P11/25.png>
-Package pdftex.def Info: P11/25.png  used on input line 436.
+Package pdftex.def Info: P11/25.png  used on input line 445.
 (pdftex.def)             Requested size: 379.41585pt x 287.37958pt.
- [9 <./P11/full.png> <./P11/20.png>]
-<P11/final.png, id=61, 446.66875pt x 339.2675pt>
+ [10 <./P11/full.png> <./P11/20.png>]
+<P11/final.png, id=66, 446.66875pt x 339.2675pt>
 File: P11/final.png Graphic file (type png)
 <use P11/final.png>
-Package pdftex.def Info: P11/final.png  used on input line 442.
+Package pdftex.def Info: P11/final.png  used on input line 451.
 (pdftex.def)             Requested size: 379.41585pt x 288.19237pt.
- [10 <./P11/25.png> <./P11/final.png>] (./HW3.aux) ) 
+ [11 <./P11/25.png> <./P11/final.png>] (./HW3.aux) ) 
 Here is how much of TeX's memory you used:
- 4861 strings out of 494923
- 71872 string characters out of 6180741
- 143937 words of memory out of 5000000
- 8106 multiletter control sequences out of 15000+600000
- 6675 words of font info for 24 fonts, out of 8000000 for 9000
+ 4868 strings out of 494923
+ 71967 string characters out of 6180741
+ 145937 words of memory out of 5000000
+ 8111 multiletter control sequences out of 15000+600000
+ 6983 words of font info for 25 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,9n,38p,739b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,38p,745b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on HW3.pdf (10 pages, 497150 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on HW3.pdf (11 pages, 547145 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
